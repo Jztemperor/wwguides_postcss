@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>WW Guides</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="relative mx-auto bg-navDark text-secondaryText text-lg p-1">
+        <div class="flex items-center justify-between px-10">
+          <!-- Logo -->
+          <div class="">
+            <img src="./img/logo.png" class="logo" alt="" />
+          </div>
+
+          <!-- Menu -->
+          <div class="hidden sm:flex space-x-6">
+            <a href="" class="hover:text-yellow-500">Introduction</a>
+            <a href="" class="hover:text-yellow-500">Talents</a>
+            <a href="" class="hover:text-yellow-500">Stats</a>
+            <a href="" class="hover:text-yellow-500">Rotation</a>
+            <a href="" class="hover:text-yellow-500">Macros</a>
+          </div>
+
+          <!-- Mobile menu icon -->
+          <button
+            id="menu_button"
+            class="block mobile_icon sm:hidden focus:outline-none cursor-pointer"
+          >
+            <span class="mobile_icon_top"></span>
+            <span class="mobile_icon_mid"></span>
+            <span class="mobile_icon_bot"></span>
+          </button>
+        </div>
+
+        <!-- Mobile menu-->
+        <div class="sm:hidden">
+          <div
+            id="mobile_menu"
+            class="hidden flex-col items-center space-y-6 font-bold bg-navDark sm:self-center drop-shadow-md absolute py-8 right-0"
+          >
+            <a href="" class="hover:text-yellow-500 px-10">Introduction</a>
+            <a href="" class="hover:text-yellow-500 px-10">Talents</a>
+            <a href="" class="hover:text-yellow-500 px-10">Stats</a>
+            <a href="" class="hover:text-yellow-500 px-10">Rotation</a>
+            <a href="" class="hover:text-yellow-500 px-10">Macros</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="w-full bg-bgBlack flex justify-center items-center">
+      <section
+        class="bg-contentBg h- sm:h-fit w-full sm:w-11/12 lg:w-10/12 xl:w-9/12 mt-10 content p-5 md:p-10 pt-4 mb-10 sm:text-lg md:text-3xl minus_nav"
+      >
+        <h1
+          class="text-center uppercase text-lg sm:text-2xl md:text-3xl font-bold text-yellow-500"
+        >
+          Windwalker Monk 10.0.5 Guide
+        </h1>
+
+        <h2
+          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+        >
+          Introduction
+        </h2>
+        <p class="py-4 text-white text-lg sm:text-md">
+          Windwalker Monk is a melee DPS spec that has a tool for nearly every
+          situation and has flexible cooldowns, great utility, and excellent
+          mobility. In Dragonflight, Windwalker Monk is becoming less of the
+          ‘AoE God’ that it had been in Shadowlands due to losing multiplicative
+          scaling with Calculated Strikes but in exchange is shoring up some of
+          its notable weaknesses in the past such as single and two target
+          damage and expanding on their already extensive utility repertoire
+          with new auras that can provide healing taken increased and avoidance
+        </p>
+
+        <h2
+          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+        >
+          Basics of Windwalker Gameplay
+        </h2>
+        <p class="py-4 text-white text-lg sm:text-md">
+          Windwalker Monk is a spec about managing resources and abilities with
+          cooldowns at the same time. The primary focus is to use
+          <img
+            class="inline spell_icon"
+            src="./img/ability_monk_tigerpalm.jpg"
+            alt="Tiger palm spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=100780/tiger-palm"
+            >Tiger Palm</a
+          >
+          to generate Chi for abilities like
+          <img
+            class="inline spell_icon"
+            src="./img/monk_ability_fistoffury.jpg"
+            alt="Fists of Fury spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=100780/tiger-palm"
+            >Fists of Fury</a
+          >
+          and
+          <img
+            class="inline spell_icon"
+            src="./img/ability_monk_risingsunkick.jpg"
+            alt="Rising sun kick spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=100780/tiger-palm"
+            >Rising Sun Kick</a
+          >
+          to use, while not capping on Chi or Energy.
+        </p>
+
+        <p class="py-4 text-white text-lg sm:text-md">
+          You need to take into consideration the
+          <img
+            class="inline spell_icon"
+            src="./img/trade_alchemy_potionb3.jpg"
+            alt="Mastery: Combo Strikes spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=100780/tiger-palm"
+            >Mastery: Combo Strikes</a
+          >
+          passive which forces the player to spamming the same abilities over
+          and over again.
+        </p>
+
+        <h2
+          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+        >
+          Advantages / Disadvantages
+        </h2>
+        <p class="py-4 text-white text-lg sm:text-md">
+          In the table below, we present the Windwalker Monk's strengths and
+          weaknesses:
+        </p>
+
+        <div class="w-full flex justify-center md:justify-start">
+          <table class="w-8/12 table-auto text-left">
+            <thead class="border-b font-medium dark:border-neutral-500">
+              <tr>
+                <th
+                  scope="col"
+                  class="px-6 py-4 sm:text-lg text-md text-green-500 font-bold tracking-wide"
+                >
+                  Advantages
+                </th>
+                <th
+                  scope="col"
+                  class="px-6 py-4 sm:text-lg text-md text-red-500 font-bold tracking-wide"
+                >
+                  Disadvantages
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b dark:border-neutral-500">
+                <td
+                  class="whitespace-nowrap px-6 py-4 font-medium text-white text-sm md:text-lg"
+                >
+                  <strong class="text-lime-500 font-semibold tracking-wide"
+                    >+</strong
+                  >
+                  Jack of all trades
+                </td>
+                <td
+                  class="whitespace-nowrap px-6 py-4 font-medium text-white text-sm md:text-lg"
+                >
+                  <strong class="text-red-600 font-semibold tracking-wide"
+                    >-</strong
+                  >
+                  Master of none
+                </td>
+              </tr>
+              <tr class="border-b dark:border-neutral-500">
+                <td
+                  class="whitespace-nowrap px-6 py-4 font-medium text-white text-sm md:text-lg"
+                >
+                  <strong class="text-lime-500 font-semibold tracking-wide"
+                    >+</strong
+                  >
+                  Exceptional Mobility
+                </td>
+                <td
+                  class="whitespace-nowrap px-6 py-4 font-medium text-white text-sm md:text-lg"
+                >
+                  <strong class="text-red-600 font-semibold tracking-wide"
+                    >-</strong
+                  >
+                  Lack of immunity
+                </td>
+              </tr>
+              <tr class="border-b dark:border-neutral-500">
+                <td
+                  class="whitespace-nowrap px-6 py-4 font-medium text-white text-sm md:text-lg"
+                >
+                  <strong class="text-lime-500 font-semibold tracking-wide"
+                    >+</strong
+                  >
+                  Strong burst
+                </td>
+                <td
+                  class="whitespace-nowrap px-6 py-4 font-medium text-white text-sm md:text-lg"
+                >
+                  <strong class="text-red-600 font-semibold tracking-wide"
+                    >-</strong
+                  >
+                  Poor scaling
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navDark footer items-center flex p-4 justify-center">
+      <p class="text-white text-lg">
+        Copyright &copy; 2023 - All rights reserved
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
