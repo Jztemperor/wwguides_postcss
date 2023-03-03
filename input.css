@@ -110,3 +110,7 @@
   border-radius: 3px;
   border: 1px solid #434445;
 }
+
+.code {
+  overflow-wrap: break-word;
+}

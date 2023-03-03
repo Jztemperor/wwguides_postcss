@@ -10,6 +10,8 @@ module.exports = {
         spellGreen: "hsl(155, 100%, 50%)",
         bgBlack: "hsl(0, 2%, 16%)",
         contentBg: "hsl(240, 4%, 11%)",
+        stringColor: "hsl(0, 0%, 53%)",
+        stringBg: "hsl(0, 0%, 9%)",
       },
     },
   },

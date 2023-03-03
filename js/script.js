@@ -8,3 +8,9 @@ mobile_menu_btn.addEventListener("click", () => {
   mobile_menu.classList.toggle("flex");
   mobile_menu.classList.toggle("hidden");
 });
+
+// Copy talent import string
+const copyString = (id) => {
+  const text_to_copy = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text_to_copy);
+};
