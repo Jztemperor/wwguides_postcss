@@ -22,7 +22,8 @@
             <a href="index.html" class="hover:text-yellow-500">Introduction</a>
             <a href="talents.html" class="hover:text-yellow-500">Talents</a>
             <a href="" class="hover:text-yellow-500">Rotation</a>
-            <a href="macros.html" class="hover:text-yellow-500">Macros</a>
+            <a href="macros.html
+            " class="hover:text-yellow-500">Macros</a>
             <a href="" class="hover:text-yellow-500">Contribute</a>
           </div>
 
@@ -60,100 +61,146 @@
 <h1
           class="text-center uppercase text-lg sm:text-2xl md:text-3xl font-bold text-yellow-500"
         >
-          TALENTS
+          MACROS
         </h1>
 
-        <article>
+        <article class="mb-5
+        ">
           <h2
           class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
         >
-          Single Target
+          Detox Mouseover
         </h2>
-         <p  class="py-4 text-white text-lg sm:text-md">
-          For pure single target engagements, which only include a few raid fights, this build is your best option.
-         </p>
+        
+        <p class="py-4 text-white text-lg sm:text-md">If the target of your mouseover action is a friendly player and they are not already dead, using this macro will cast  <img
+            class="inline spell_icon"
+            src="./img/ability_monk_detox.jpg"
+            alt="Detox spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=115450/detox"
+            >Detox</a
+          > on them.</p>
 
          <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIkIJRkQikkkk0SAAAA</p>
-            <p class="code inline sm:hidden text-lg">Copy string</p>
+          	<p class="code hidden sm:inline" id="st_string">
+
+                 #showtooltip Detox <br>
+                 /cast [@mouseover,help,nodead] Detox;
+            </p>
+            <p class="code inline sm:hidden text-lg">Copy Macro</p>
             <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
      
          </div>
-         
-         <div class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5">
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Monk Tree</h3>
-          <img src="./img/ST_MONK.png" alt="Single target monk tree" class="border-solid border-2 border-bgBlack">
-          </div>
-          
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Windwalker Tree</h3>
-            <img src="./img/ST_WW.png" alt="Single target ww tree" class="border-solid border-2 border-bgBlack">
-          </div>
-         </div>
-  
         </article>
 
-        <article>
+        <article class="mb-5">
           <h2
           class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
         >
-          Cleave
+          Tiger's Lust Mouseover
         </h2>
-         <p  class="py-4 text-white text-lg sm:text-md">
-          For most raid encounters with adds or most Mythic+ fights where the packs are smaller, this is a decent all-around build.
-         </p>
+        
+        <p class="py-4 text-white text-lg sm:text-md">If the target of your mouseover action is a friendly player and they are not already dead, using this macro will cast  <img
+            class="inline spell_icon"
+            src="./img/ability_monk_tigerslust.jpg"
+            alt="Tiger's Lust spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=116841/tigers-lust"
+            >Tiger's Lust</a
+          > on them.</p>
 
          <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQSkkEtISEAAAAIRSSIBIJJCJlkERCJkkkk0SAAAA</p>
-            <p class="code inline sm:hidden text-lg">Copy string</p>
+          	<p class="code hidden sm:inline" id="st_string">
+
+                 #showtooltip Tiger's Lust <br>
+                 /cast [@mouseover,help,nodead] Tiger's Lust;
+            </p>
+            <p class="code inline sm:hidden text-lg">Copy Macro</p>
             <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
      
          </div>
-         
-         <div class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5">
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Monk Tree</h3>
-          <img src="./img/CLEAVE_MONK.png" alt="Cleave monk tree" class="border-solid border-2 border-bgBlack">
-          </div>
-          
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Windwalker Tree</h3>
-            <img src="./img/CLEAVE_WW.png" alt="Cleave ww tree" class="border-solid border-2 border-bgBlack">
-          </div>
-         </div>
-  
         </article>
 
-          <article>
+                <article class="mb-5">
           <h2
           class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
         >
-          AOE
+          Bonedust Brew Quick Cast
         </h2>
-         <p  class="py-4 text-white text-lg sm:text-md">
-          The default, maximum AOE build for Mythic+ or raid engagements with a lot of adds.
-         </p>
+        
+        <p class="py-4 text-white text-lg sm:text-md">This macro will throw    <img
+            class="inline spell_icon"
+            src="./img/ability_maldraxxus_monk.jpg"
+            alt="Bonedust Brew spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=325216/bonedust-brew"
+            >Bonedust Brew</a
+          > at your cursor's location without having the click on the ground.</p>
 
          <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQSkkElISEAAAAQkkESEIJJCJlkEhQikkkk0SAAAA</p>
-            <p class="code inline sm:hidden text-lg">Copy string</p>
+          	<p class="code hidden sm:inline" id="st_string">
+
+                #showtooltip <br>
+                /cast [known: 386276, @cursor] Bonedust Brew;
+            </p>
+            <p class="code inline sm:hidden text-lg">Copy Macro</p>
             <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
      
          </div>
-         
-         <div class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5">
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Monk Tree</h3>
-          <img src="./img/AOE_MONK.png" alt="Cleave monk tree" class="border-solid border-2 border-bgBlack">
-          </div>
+        </article>
+
+        <article class="mb-5">
+          <h2
+          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+        >
+          Serenity, RSK Macro
+        </h2>
+        
+        <p class="py-4 text-white text-lg sm:text-md">This macro will cast  <img
+            class="inline spell_icon"
+            src="./img/ability_monk_serenity.jpg"
+            alt="Serenity spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=152173/serenity"
+            >Serenity</a
+          > and cast 
           
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Windwalker Tree</h3>
-            <img src="./img/AOE_WW.png" alt="Cleave ww tree" class="border-solid border-2 border-bgBlack">
-          </div>
+          <img
+            class="inline spell_icon"
+            src="./img/ability_monk_risingsunkick.jpg"
+            alt="Rising Sun Kick spell icon"
+          />
+          <a
+            target="_blank"
+            class="text-spellGreen underline"
+            href="https://www.wowhead.com/spell=152173/serenity"
+            >Rising Sun Kick</a
+          >
+           at the same time, with just one button press.</p>
+
+         <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
+          	<p class="code hidden sm:inline" id="st_string">
+
+                 #showtooltip SerenityRSK <br>
+                 /cast Serenity <br>
+                 /cast Rising Sun Kick
+            </p>
+            <p class="code inline sm:hidden text-lg">Copy Macro</p>
+            <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
+     
          </div>
-  
         </article>
 
       </section>
