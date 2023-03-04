@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>WW Guides</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="relative mx-auto bg-navDark text-secondaryText text-lg p-1">
+        <div class="flex items-center justify-between px-10">
+          <!-- Logo -->
+          <div class="">
+            <img src="./img/logo.png" class="logo" alt="" />
+          </div>
+
+          <!-- Menu -->
+          <div class="hidden sm:flex space-x-6">
+            <a href="index.html" class="hover:text-yellow-500">Introduction</a>
+            <a href="talents.html" class="hover:text-yellow-500">Talents</a>
+            <a href="" class="hover:text-yellow-500">Rotation</a>
+            <a href="macros.html" class="hover:text-yellow-500">Macros</a>
+            <a href="contribute.html" class="hover:text-yellow-500"
+              >Contribute</a
+            >
+          </div>
+
+          <!-- Mobile menu icon -->
+          <button
+            id="menu_button"
+            class="block mobile_icon sm:hidden focus:outline-none cursor-pointer"
+          >
+            <span class="mobile_icon_top"></span>
+            <span class="mobile_icon_mid"></span>
+            <span class="mobile_icon_bot"></span>
+          </button>
+        </div>
+
+        <!-- Mobile menu-->
+        <div class="sm:hidden">
+          <div
+            id="mobile_menu"
+            class="hidden flex-col items-center space-y-6 font-bold bg-navDark sm:self-center drop-shadow-md absolute py-8 right-0"
+          >
+            <a href="index.html" class="hover:text-yellow-500 px-10"
+              >Introduction</a
+            >
+            <a href="talents.html" class="hover:text-yellow-500 px-10"
+              >Talents</a
+            >
+            <a href="" class="hover:text-yellow-500 px-10">Rotation</a>
+            <a
+              href="macros.html
+            "
+              class="hover:text-yellow-500"
+              >Macros</a
+            >
+            <a href="contribute.html" class="hover:text-yellow-500 px-10"
+              >Contribute</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="w-full bg-bgBlack flex justify-center items-center">
+      <section
+        class="flex justify-center items-center flex-col bg-contentBg h- sm:h-fit w-full sm:w-11/12 lg:w-10/12 xl:w-9/12 mt-10 content p-5 md:p-10 pt-4 mb-10 sm:text-lg md:text-3xl minus_nav"
+      >
+        <h1
+          class="text-center uppercase text-lg sm:text-2xl md:text-3xl font-bold text-yellow-500"
+        >
+          Contribute
+        </h1>
+        <p class="py-4 text-white text-lg sm:text-md text-center">
+          Want to contribute, or send some feedback about my guides, feel free
+          to contact me via the form below!
+        </p>
+
+        <div class="w-10/12 sm:w-8/12">
+           <form  method="post">
+             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+                <div>
+                    <label for="firstName" class="text-white tracking-wider text-lg font-bold
+                    ">First Name</label>
+				    <input id="firstName" name="firstName" class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600
+                    
+                    text-gray-900 mt-2 p-2 rounded-lg text-lg" type="text" placeholder="First Name*" required/>
+                </div>
+                
+                <div>
+                    <label for="lastName" class="text-white tracking-wider text-lg font-bold
+                    ">Last Name</label>
+				    <input id="lastName" name="lastName" class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600
+                    
+                    text-gray-900 mt-2 p-2 rounded-lg text-lg" type="text" placeholder="Last Name*" required/>
+                </div>
+
+				<div>
+                    <label for="email" class="text-white tracking-wider text-lg font-bold
+                    ">Email</label>
+                    <input maxlength="50" id="email" name="email" class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600
+                    
+                    text-gray-900 mt-2 p-2 rounded-lg text-lg"
+            type="email" placeholder="Email*" required/>
+                </div>
+
+                <div>
+                    <label for="subject" class="text-white tracking-wider text-lg font-bold
+                    ">Subject</label>
+                    <input maxlength="50" id="message" name="message" class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600
+                    
+                    text-gray-900 mt-2 p-2 rounded-lg text-lg"
+            type="text" placeholder="Subject*" required/>
+                </div>
+			
+        </div>
+				<div class="">
+                    <label for="message" class="text-white tracking-wider text-lg font-bold
+                    ">Message</label>
+					<textarea placeholder="Message*" id="message" name="message" maxlength="400" class="w-full h-32 text-lg bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600" required></textarea>
+				</div>
+
+                <div class="mb-2">
+                    <input  type="checkbox" name="check" id="check">
+                    <label class="text-white tracking-wider text-sm"  for="check">I want to recieve emails about future updates</label>
+                </div>
+
+                <div>
+                    <div class="text-white tracking-wider text-lg font-bold">Message type</div>
+                    <div class="flex items-center gap-1 mt-1">
+                        <input type="radio" name="rad" id="feedback" class="w-4 h-4  bg-gray-100 border-gray-300 focus:outline-none "required>
+                        <label for="feedback" class="text-white tracking-wider text-sm font-normal">Feedback</label>
+                    </div>
+                    <div class="flex items-center gap-1 mt-1">
+                        <input type="radio" name="rad" id="business" class="w-4 h-4  bg-gray-100 border-gray-300 focus:outline-none ">
+                        <label for="business" class="text-white tracking-wider text-sm font-normal">Business Inquiry</label>
+                    </div>
+                </div>
+
+                
+
+				<div class="my-2 w-full sm:w-1/2 lg:w-1/4">
+					<button type="submit" class="uppercase text-sm font-bold tracking-wide bg-yellow-600 text-gray-100 p-3 rounded-lg w-full 
+                      focus:outline-none focus:shadow-outline">
+            Send Me a Message
+          </button>
+           </form>
+				</div>
+			</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-navDark footer items-center flex p-4 justify-center">
+      <p class="text-white text-lg">
+        Copyright &copy; 2023 - All rights reserved
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

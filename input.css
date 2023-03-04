@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+main {
+  background: url("../../img/background.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+*/
+
 .logo {
   height: 5rem;
 }
