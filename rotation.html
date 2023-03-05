@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>WW Guides</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav class="relative mx-auto bg-navDark text-secondaryText text-lg p-1">
+        <div class="flex items-center justify-between px-10">
+          <!-- Logo -->
+          <div class="">
+            <img src="./img/logo.png" class="logo" alt="" />
+          </div>
+
+          <!-- Menu -->
+          <div class="hidden sm:flex space-x-6">
+            <a href="index.html" class="hover:text-yellow-500">Introduction</a>
+            <a href="talents.html" class="hover:text-yellow-500">Talents</a>
+            <a
+              href="rotation.html"
+              class="hover:text-yellow-500 text-yellow-500"
+              >Rotation</a
+            >
+            <a href="macros.html" class="hover:text-yellow-500">Macros</a>
+            <a href="contribute.html" class="hover:text-yellow-500"
+              >Contribute</a
+            >
+          </div>
+
+          <!-- Mobile menu icon -->
+          <button
+            id="menu_button"
+            class="block mobile_icon sm:hidden focus:outline-none cursor-pointer"
+          >
+            <span class="mobile_icon_top"></span>
+            <span class="mobile_icon_mid"></span>
+            <span class="mobile_icon_bot"></span>
+          </button>
+        </div>
+
+        <!-- Mobile menu-->
+        <div class="sm:hidden">
+          <div
+            id="mobile_menu"
+            class="hidden flex-col items-center space-y-6 font-bold bg-navDark sm:self-center drop-shadow-md absolute py-8 right-0"
+          >
+            <a href="index.html" class="hover:text-yellow-500 px-10"
+              >Introduction</a
+            >
+            <a href="talents.html" class="hover:text-yellow-500 px-10"
+              >Talents</a
+            >
+            <a
+              href="rotation.html"
+              class="hover:text-yellow-500 text-yellow-500 px-10"
+              >Rotation</a
+            >
+            <a
+              href="macros.html
+            "
+              class="hover:text-yellow-500"
+              >Macros</a
+            >
+            <a href="contribute.html" class="hover:text-yellow-500 px-10"
+              >Contribute</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="w-full bg-bgBlack flex justify-center items-center">
+      <section
+        class="bg-contentBg h- sm:h-fit w-full sm:w-11/12 lg:w-10/12 xl:w-9/12 mt-10 content p-5 md:p-10 pt-4 mb-10 sm:text-lg md:text-3xl minus_nav"
+      >
+        <h1
+          class="text-center uppercase text-lg sm:text-2xl md:text-3xl font-bold text-yellow-500"
+        >
+          Windwalker Monk 10.0.5 Guide
+        </h1>
+      </section>
+    </main>
+
+    <footer class="bg-navDark footer items-center flex p-4 justify-center">
+      <p class="text-white text-lg">
+        Copyright &copy; 2023 - All rights reserved
+      </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
