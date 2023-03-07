@@ -4,12 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="./css/main.css" rel="stylesheet" />
-    <title>Talents</title>
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <title>WW Guides - Macros</title>
   </head>
   <body>
-     <!-- Navbar -->
+    <!-- Navbar -->
+    <header>
       <nav class="relative mx-auto bg-navDark text-secondaryText text-lg p-1">
         <div class="flex items-center justify-between px-10">
           <!-- Logo -->
@@ -21,11 +29,21 @@
           <div class="hidden sm:flex space-x-6">
             <a href="index.html" class="hover:text-yellow-500">Introduction</a>
             <a href="talents.html" class="hover:text-yellow-500">Talents</a>
-            <a href="rotation.html
-            " class="hover:text-yellow-500">Rotation</a>
-            <a href="macros.html
-            " class="hover:text-yellow-500 text-yellow-500">Macros</a>
-            <a href="contribute.html" class="hover:text-yellow-500">Contribute</a>
+            <a
+              href="rotation.html
+            "
+              class="hover:text-yellow-500"
+              >Rotation</a
+            >
+            <a
+              href="macros.html
+            "
+              class="hover:text-yellow-500 text-yellow-500"
+              >Macros</a
+            >
+            <a href="contribute.html" class="hover:text-yellow-500"
+              >Contribute</a
+            >
           </div>
 
           <!-- Mobile menu icon -->
@@ -45,11 +63,23 @@
             id="mobile_menu"
             class="hidden flex-col items-center space-y-6 font-bold bg-navDark sm:self-center drop-shadow-md absolute py-8 right-0"
           >
-            <a href="index.html" class="hover:text-yellow-500 px-10">Introduction</a>
-            <a href="talents.html" class="hover:text-yellow-500 px-10">Talents</a>
-            <a href="rotation.html" class="hover:text-yellow-500 px-10">Rotation</a>
-            <a href="macros.html" class="hover:text-yellow-500 text-yellow-500 px-10">Macros</a>
-            <a href="contribute.html" class="hover:text-yellow-500 px-10">Contribute</a>
+            <a href="index.html" class="hover:text-yellow-500 px-10"
+              >Introduction</a
+            >
+            <a href="talents.html" class="hover:text-yellow-500 px-10"
+              >Talents</a
+            >
+            <a href="rotation.html" class="hover:text-yellow-500 px-10"
+              >Rotation</a
+            >
+            <a
+              href="macros.html"
+              class="hover:text-yellow-500 text-yellow-500 px-10"
+              >Macros</a
+            >
+            <a href="contribute.html" class="hover:text-yellow-500 px-10"
+              >Contribute</a
+            >
           </div>
         </div>
       </nav>
@@ -59,155 +89,187 @@
       <section
         class="bg-contentBg h- sm:h-fit w-full sm:w-11/12 lg:w-10/12 xl:w-9/12 mt-10 content p-5 md:p-10 pt-4 mb-10 sm:text-lg md:text-3xl minus_nav"
       >
-<h1
+        <h1
           class="text-center uppercase text-lg sm:text-2xl md:text-3xl font-bold text-yellow-500"
         >
           MACROS
         </h1>
 
-        <article class="mb-5
-        ">
-          <h2
-          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
-        >
-          Detox Mouseover
-        </h2>
-        
-        <p class="py-4 text-white text-lg sm:text-md">If the target of your mouseover action is a friendly player and they are not already dead, using this macro will cast  <img
-            class="inline spell_icon"
-            src="./img/ability_monk_detox.jpg"
-            alt="Detox spell icon"
-          />
-          <a
-            target="_blank"
-            class="text-spellGreen underline"
-            href="https://www.wowhead.com/spell=115450/detox"
-            >Detox</a
-          > on them.</p>
-
-         <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">
-
-                 #showtooltip Detox <br>
-                 /cast [@mouseover,help,nodead] Detox;
-            </p>
-            <p class="code inline sm:hidden text-lg">Copy Macro</p>
-            <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
-     
-         </div>
-        </article>
-
         <article class="mb-5">
           <h2
-          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
-        >
-          Tiger's Lust Mouseover
-        </h2>
-        
-        <p class="py-4 text-white text-lg sm:text-md">If the target of your mouseover action is a friendly player and they are not already dead, using this macro will cast  <img
-            class="inline spell_icon"
-            src="./img/ability_monk_tigerslust.jpg"
-            alt="Tiger's Lust spell icon"
-          />
-          <a
-            target="_blank"
-            class="text-spellGreen underline"
-            href="https://www.wowhead.com/spell=116841/tigers-lust"
-            >Tiger's Lust</a
-          > on them.</p>
-
-         <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">
-
-                 #showtooltip Tiger's Lust <br>
-                 /cast [@mouseover,help,nodead] Tiger's Lust;
-            </p>
-            <p class="code inline sm:hidden text-lg">Copy Macro</p>
-            <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
-     
-         </div>
-        </article>
-
-                <article class="mb-5">
-          <h2
-          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
-        >
-          Bonedust Brew Quick Cast
-        </h2>
-        
-        <p class="py-4 text-white text-lg sm:text-md">This macro will throw    <img
-            class="inline spell_icon"
-            src="./img/ability_maldraxxus_monk.jpg"
-            alt="Bonedust Brew spell icon"
-          />
-          <a
-            target="_blank"
-            class="text-spellGreen underline"
-            href="https://www.wowhead.com/spell=325216/bonedust-brew"
-            >Bonedust Brew</a
-          > at your cursor's location without having the click on the ground.</p>
-
-         <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">
-
-                #showtooltip <br>
-                /cast [known: 386276, @cursor] Bonedust Brew;
-            </p>
-            <p class="code inline sm:hidden text-lg">Copy Macro</p>
-            <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
-     
-         </div>
-        </article>
-
-        <article class="mb-5">
-          <h2
-          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
-        >
-          Serenity, RSK Macro
-        </h2>
-        
-        <p class="py-4 text-white text-lg sm:text-md">This macro will cast  <img
-            class="inline spell_icon"
-            src="./img/ability_monk_serenity.jpg"
-            alt="Serenity spell icon"
-          />
-          <a
-            target="_blank"
-            class="text-spellGreen underline"
-            href="https://www.wowhead.com/spell=152173/serenity"
-            >Serenity</a
-          > and cast 
-          
-          <img
-            class="inline spell_icon"
-            src="./img/ability_monk_risingsunkick.jpg"
-            alt="Rising Sun Kick spell icon"
-          />
-          <a
-            target="_blank"
-            class="text-spellGreen underline"
-            href="https://www.wowhead.com/spell=152173/serenity"
-            >Rising Sun Kick</a
+            class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
           >
-           at the same time, with just one button press.</p>
+            Detox Mouseover
+          </h2>
 
-         <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">
+          <p class="py-4 text-white text-lg sm:text-md">
+            If the target of your mouseover action is a friendly player and they
+            are not already dead, using this macro will cast
+            <img
+              class="inline spell_icon"
+              src="./img/ability_monk_detox.jpg"
+              alt="Detox spell icon"
+            />
+            <a
+              target="_blank"
+              class="text-spellGreen visited:text-spellGreenVisited underline"
+              href="https://www.wowhead.com/spell=115450/detox"
+              >Detox</a
+            >
+            on them.
+          </p>
 
-                 #showtooltip SerenityRSK <br>
-                 /cast Serenity <br>
-                 /cast Rising Sun Kick
+          <div
+            class="inline-block w-full pt-4 pb-4 pl-5 pr-5 bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code justify-between items-center"
+          >
+            <p class="code hidden sm:inline" id="dt_string">
+              #showtooltip Detox <br />
+              /cast [@mouseover,help,nodead] Detox;
             </p>
             <p class="code inline sm:hidden text-lg">Copy Macro</p>
-            <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
-     
-         </div>
+            <button
+              class="fa fa-clone cursor-pointer text-lg"
+              aria-hidden="true"
+              onclick="copyString('dt_string')"
+            ></button>
+          </div>
         </article>
 
+        <article class="mb-5">
+          <h2
+            class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+          >
+            Tiger's Lust Mouseover
+          </h2>
+
+          <p class="py-4 text-white text-lg sm:text-md">
+            If the target of your mouseover action is a friendly player and they
+            are not already dead, using this macro will cast
+            <img
+              class="inline spell_icon"
+              src="./img/ability_monk_tigerslust.jpg"
+              alt="Tiger's Lust spell icon"
+            />
+            <a
+              target="_blank"
+              class="text-spellGreen visited:text-spellGreenVisited underline"
+              href="https://www.wowhead.com/spell=116841/tigers-lust"
+              >Tiger's Lust</a
+            >
+            on them.
+          </p>
+
+          <div
+            class="inline-block w-full pt-4 pb-4 pl-5 pr-5 bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code justify-between items-center"
+          >
+            <p class="code hidden sm:inline" id="tl_string">
+              #showtooltip Tiger's Lust <br />
+              /cast [@mouseover,help,nodead] Tiger's Lust;
+            </p>
+            <p class="code inline sm:hidden text-lg">Copy Macro</p>
+            <button
+              class="fa fa-clone cursor-pointer text-lg"
+              aria-hidden="true"
+              onclick="copyString('tl_string')"
+            ></button>
+          </div>
+        </article>
+
+        <article class="mb-5">
+          <h2
+            class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+          >
+            Bonedust Brew Quick Cast
+          </h2>
+
+          <p class="py-4 text-white text-lg sm:text-md">
+            This macro will throw
+            <img
+              class="inline spell_icon"
+              src="./img/ability_maldraxxus_monk.jpg"
+              alt="Bonedust Brew spell icon"
+            />
+            <a
+              target="_blank"
+              class="text-spellGreen visited:text-spellGreenVisited underline"
+              href="https://www.wowhead.com/spell=325216/bonedust-brew"
+              >Bonedust Brew</a
+            >
+            at your cursor's location without having the click on the ground.
+          </p>
+
+          <div
+            class="inline-block w-full pt-4 pb-4 pl-5 pr-5 bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code justify-between items-center"
+          >
+            <p class="code hidden sm:inline" id="b_string">
+              #showtooltip <br />
+              /cast [known: 386276, @cursor] Bonedust Brew;
+            </p>
+            <p class="code inline sm:hidden text-lg">Copy Macro</p>
+            <button
+              class="fa fa-clone cursor-pointer text-lg"
+              aria-hidden="true"
+              onclick="copyString('b_string')"
+            ></button>
+          </div>
+        </article>
+
+        <article class="mb-5">
+          <h2
+            class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+          >
+            Serenity, RSK Macro
+          </h2>
+
+          <p class="py-4 text-white text-lg sm:text-md">
+            This macro will cast
+            <img
+              class="inline spell_icon"
+              src="./img/ability_monk_serenity.jpg"
+              alt="Serenity spell icon"
+            />
+            <a
+              target="_blank"
+              class="text-spellGreen visited:text-spellGreenVisited underline"
+              href="https://www.wowhead.com/spell=152173/serenity"
+              >Serenity</a
+            >
+            and cast
+
+            <img
+              class="inline spell_icon"
+              src="./img/ability_monk_risingsunkick.jpg"
+              alt="Rising Sun Kick spell icon"
+            />
+            <a
+              target="_blank"
+              class="text-spellGreen visited:text-spellGreenVisited underline"
+              href="https://www.wowhead.com/spell=152173/serenity"
+              >Rising Sun Kick</a
+            >
+            at the same time, with just one button press.
+          </p>
+
+          <div
+            class="inline-block w-full pt-4 pb-4 pl-5 pr-5 bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code justify-between items-center"
+          >
+            <p class="code hidden sm:inline" id="rsk_string">
+              #showtooltip SerenityRSK <br />
+              /cast Serenity <br />
+              /cast Rising Sun Kick
+            </p>
+            <p class="code inline sm:hidden text-lg">Copy Macro</p>
+            <button
+              class="fa fa-clone cursor-pointer text-lg"
+              aria-hidden="true"
+              onclick="copyString('rsk_string')"
+            ></button>
+          </div>
+        </article>
       </section>
     </main>
 
-   <footer class="bg-navDark footer items-center flex p-4 justify-center">
+    <footer class="bg-navDark footer items-center flex p-4 justify-center">
       <p class="text-white text-lg">
         Copyright &copy; 2023 - All rights reserved
       </p>

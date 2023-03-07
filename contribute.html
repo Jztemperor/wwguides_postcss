@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link href="./css/main.css" rel="stylesheet" />
-    <title>WW Guides</title>
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+    <title>WW Guides - Contribute</title>
   </head>
   <body>
     <header>
@@ -24,7 +25,9 @@
             <a href="talents.html" class="hover:text-yellow-500">Talents</a>
             <a href="rotation.html" class="hover:text-yellow-500">Rotation</a>
             <a href="macros.html" class="hover:text-yellow-500">Macros</a>
-            <a href="contribute.html" class="hover:text-yellow-500 text-yellow-500"
+            <a
+              href="contribute.html"
+              class="hover:text-yellow-500 text-yellow-500"
               >Contribute</a
             >
           </div>
@@ -52,14 +55,18 @@
             <a href="talents.html" class="hover:text-yellow-500 px-10"
               >Talents</a
             >
-            <a href="rotation.html" class="hover:text-yellow-500 px-10">Rotation</a>
+            <a href="rotation.html" class="hover:text-yellow-500 px-10"
+              >Rotation</a
+            >
             <a
               href="macros.html
             "
               class="hover:text-yellow-500"
               >Macros</a
             >
-            <a href="contribute.html" class="hover:text-yellow-500 text-yellow-500 px-10"
+            <a
+              href="contribute.html"
+              class="hover:text-yellow-500 text-yellow-500 px-10"
               >Contribute</a
             >
           </div>
@@ -81,76 +88,148 @@
         </p>
 
         <div class="w-10/12 sm:w-8/12">
-           <form  method="post">
-             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
-                <div>
-                    <label for="firstName" class="text-white tracking-wider text-lg font-bold
-                    ">First Name</label>
-				    <input id="firstName" name="firstName" class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600
-                    
-                    text-gray-900 mt-2 p-2 rounded-lg text-lg" type="text" placeholder="First Name*" required/>
-                </div>
-                
-                <div>
-                    <label for="lastName" class="text-white tracking-wider text-lg font-bold
-                    ">Last Name</label>
-				    <input id="lastName" name="lastName" class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600
-                    
-                    text-gray-900 mt-2 p-2 rounded-lg text-lg" type="text" placeholder="Last Name*" required/>
-                </div>
+          <form method="get" action="#">
+            <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+              <div>
+                <label
+                  for="firstName"
+                  class="text-white tracking-wider text-lg font-bold"
+                  >First Name</label
+                >
+                <input
+                  id="firstName"
+                  name="firstName"
+                  class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 text-gray-900 mt-2 p-2 rounded-lg text-lg"
+                  type="text"
+                  placeholder="First Name*"
+                  required
+                />
+              </div>
 
-				<div>
-                    <label for="email" class="text-white tracking-wider text-lg font-bold
-                    ">Email</label>
-                    <input maxlength="50" id="email" name="email" class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600
-                    
-                    text-gray-900 mt-2 p-2 rounded-lg text-lg"
-            type="email" placeholder="Email*" required/>
-                </div>
+              <div>
+                <label
+                  for="lastName"
+                  class="text-white tracking-wider text-lg font-bold"
+                  >Last Name</label
+                >
+                <input
+                  id="lastName"
+                  name="lastName"
+                  class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 text-gray-900 mt-2 p-2 rounded-lg text-lg"
+                  type="text"
+                  placeholder="Last Name*"
+                  required
+                />
+              </div>
 
-                <div>
-                    <label for="subject" class="text-white tracking-wider text-lg font-bold
-                    ">Subject</label>
-                    <input maxlength="50" id="message" name="message" class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600
-                    
-                    text-gray-900 mt-2 p-2 rounded-lg text-lg"
-            type="text" placeholder="Subject*" required/>
-                </div>
-			
-        </div>
-				<div class="">
-                    <label for="message" class="text-white tracking-wider text-lg font-bold
-                    ">Message</label>
-					<textarea placeholder="Message*" id="message" name="message" maxlength="400" class="w-full h-32 text-lg bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600" required></textarea>
-				</div>
+              <div>
+                <label
+                  for="email"
+                  class="text-white tracking-wider text-lg font-bold"
+                  >Email</label
+                >
+                <input
+                  maxlength="50"
+                  id="email"
+                  name="email"
+                  class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 text-gray-900 mt-2 p-2 rounded-lg text-lg"
+                  type="email"
+                  placeholder="Email*"
+                  required
+                />
+              </div>
 
-                <div class="mb-2">
-                    <input  type="checkbox" name="check" id="check">
-                    <label class="text-white tracking-wider text-sm"  for="check">I want to recieve emails about future updates</label>
-                </div>
+              <div>
+                <label
+                  for="subject"
+                  class="text-white tracking-wider text-lg font-bold"
+                  >Subject</label
+                >
+                <input
+                  maxlength="50"
+                  id="subject"
+                  name="subject"
+                  class="w-full bg-gray-100 focus:outline-none focus:ring-2 focus:ring-yellow-600 text-gray-900 mt-2 p-2 rounded-lg text-lg"
+                  type="text"
+                  placeholder="Subject*"
+                  required
+                />
+              </div>
+            </div>
+            <div class="">
+              <label
+                for="message"
+                class="text-white tracking-wider text-lg font-bold"
+                >Message</label
+              >
+              <textarea
+                placeholder="Message*"
+                id="message"
+                name="message"
+                maxlength="400"
+                class="w-full h-32 text-lg bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-600"
+                required
+              ></textarea>
+            </div>
 
-                <div>
-                    <div class="text-white tracking-wider text-lg font-bold">Message type</div>
-                    <div class="flex items-center gap-1 mt-1">
-                        <input type="radio" name="rad" id="feedback" class="w-4 h-4  bg-gray-100 border-gray-300 focus:outline-none "required>
-                        <label for="feedback" class="text-white tracking-wider text-sm font-normal">Feedback</label>
-                    </div>
-                    <div class="flex items-center gap-1 mt-1">
-                        <input type="radio" name="rad" id="business" class="w-4 h-4  bg-gray-100 border-gray-300 focus:outline-none ">
-                        <label for="business" class="text-white tracking-wider text-sm font-normal">Business Inquiry</label>
-                    </div>
-                </div>
+            <div class="mb-2">
+              <input type="checkbox" name="check" id="check" />
+              <label class="text-white tracking-wider text-sm" for="check"
+                >I want to recieve emails about future updates</label
+              >
+            </div>
 
-                
+            <div>
+              <div class="text-white tracking-wider text-lg font-bold">
+                Message type
+              </div>
+              <div class="flex items-center gap-1 mt-1">
+                <input
+                  type="radio"
+                  name="rad"
+                  id="feedback"
+                  class="w-4 h-4 bg-gray-100 border-gray-300 focus:outline-none"
+                  required
+                />
+                <label
+                  for="feedback"
+                  class="text-white tracking-wider text-sm font-normal"
+                  >Feedback</label
+                >
+              </div>
+              <div class="flex items-center gap-1 mt-1">
+                <input
+                  type="radio"
+                  name="rad"
+                  id="business"
+                  class="w-4 h-4 bg-gray-100 border-gray-300 focus:outline-none"
+                />
+                <label
+                  for="business"
+                  class="text-white tracking-wider text-sm font-normal"
+                  >Business Inquiry</label
+                >
+              </div>
+            </div>
 
-				<div class="my-2 w-full sm:w-1/2 lg:w-1/4">
-					<button type="submit" class="uppercase text-sm font-bold tracking-wide bg-yellow-600 text-gray-100 p-3 rounded-lg w-full 
-                      focus:outline-none focus:shadow-outline">
-            Send Me a Message
-          </button>
-           </form>
-				</div>
-			</div>
+            <div
+              class="my-3 w-full md:w-7/12 flex justify-center sm:flex-row flex-col mt-2"
+            >
+              <button
+                type="submit"
+                class="uppercase mb-5 sm:mr-5 sm:mb-0 text-xs font-bold tracking-wider bg-yellow-600 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+              >
+                Send Me a Message
+              </button>
+
+              <button
+                type="reset"
+                class="uppercase text-xs font-bold tracking-wider bg-red-600 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline"
+              >
+                Reset
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </main>

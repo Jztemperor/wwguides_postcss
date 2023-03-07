@@ -1,0 +1,45 @@
+header {
+  display: none !important;
+}
+
+nav {
+  display: none !important;
+}
+
+footer {
+  display: none !important;
+}
+
+video {
+  display: none !important;
+  height: 0px !important;
+}
+
+.logo {
+  display: none !important;
+}
+
+img {
+  width: 80%;
+}
+
+.imgcont {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  color: #333 !important;
+}
+
+li {
+  color: #333 !important;
+}
+
+table > tr > td {
+  color: #333 !important;
+}
+
+section {
+  margin: 0 !important;
+}

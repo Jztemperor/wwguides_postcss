@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="./css/main.css" rel="stylesheet" />
-    <title>Talents</title>
+    <link rel="stylesheet" href="./css/print.css" media="print" />
+
+    <title>WW Guides - Talents</title>
   </head>
   <body>
-     <!-- Navbar -->
+    <!-- Navbar -->
+    <header>
       <nav class="relative mx-auto bg-navDark text-secondaryText text-lg p-1">
         <div class="flex items-center justify-between px-10">
           <!-- Logo -->
@@ -20,10 +29,14 @@
           <!-- Menu -->
           <div class="hidden sm:flex space-x-6">
             <a href="index.html" class="hover:text-yellow-500">Introduction</a>
-            <a href="talents.html" class="hover:text-yellow-500 text-yellow-500">Talents</a>
+            <a href="talents.html" class="hover:text-yellow-500 text-yellow-500"
+              >Talents</a
+            >
             <a href="rotation.html" class="hover:text-yellow-500">Rotation</a>
             <a href="macros.html" class="hover:text-yellow-500">Macros</a>
-            <a href="contribute.html" class="hover:text-yellow-500">Contribute</a>
+            <a href="contribute.html" class="hover:text-yellow-500"
+              >Contribute</a
+            >
           </div>
 
           <!-- Mobile menu icon -->
@@ -43,11 +56,21 @@
             id="mobile_menu"
             class="hidden flex-col items-center space-y-6 font-bold bg-navDark sm:self-center drop-shadow-md absolute py-8 right-0"
           >
-            <a href="index.html" class="hover:text-yellow-500 px-10">Introduction</a>
-            <a href="talents.html" class="hover:text-yellow-500 text-yellow-500 px-10">Talents</a>
-            <a href="rotation.html" class="hover:text-yellow-500 px-10">Rotation</a>
+            <a href="index.html" class="hover:text-yellow-500 px-10"
+              >Introduction</a
+            >
+            <a
+              href="talents.html"
+              class="hover:text-yellow-500 text-yellow-500 px-10"
+              >Talents</a
+            >
+            <a href="rotation.html" class="hover:text-yellow-500 px-10"
+              >Rotation</a
+            >
             <a href="macros.html" class="hover:text-yellow-500 px-10">Macros</a>
-            <a href="contribute.html" class="hover:text-yellow-500 px-10">Contribute</a>
+            <a href="contribute.html" class="hover:text-yellow-500 px-10"
+              >Contribute</a
+            >
           </div>
         </div>
       </nav>
@@ -57,7 +80,7 @@
       <section
         class="bg-contentBg h- sm:h-fit w-full sm:w-11/12 lg:w-10/12 xl:w-9/12 mt-10 content p-5 md:p-10 pt-4 mb-10 sm:text-lg md:text-3xl minus_nav"
       >
-<h1
+        <h1
           class="text-center uppercase text-lg sm:text-2xl md:text-3xl font-bold text-yellow-500"
         >
           TALENTS
@@ -65,114 +88,187 @@
 
         <article>
           <h2
-          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
-        >
-          Single Target
-        </h2>
-         <p  class="py-4 text-white text-lg sm:text-md">
-          For pure single target engagements, which only include a few raid fights, this build is your best option.
-         </p>
+            class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+          >
+            Single Target
+          </h2>
+          <p class="py-4 text-white text-lg sm:text-md imgtext">
+            For pure single target engagements, which only include a few raid
+            fights, this build is your best option.
+          </p>
 
-         <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIkIJRkQikkkk0SAAAA</p>
+          <div
+            class="inline-block w-full pt-4 pb-4 pl-5 pr-5 bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code justify-between items-center"
+          >
+            <p class="code hidden sm:inline" id="st_string">
+              B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIkIJRkQikkkk0SAAAA
+            </p>
             <p class="code inline sm:hidden text-lg">Copy string</p>
-            <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
-     
-         </div>
-         
-         <div class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5">
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Monk Tree</h3>
-          <a href="./img/ST_MONKbig.png" class="cursor-pointer">
-            <img src="./img/ST_MONK.png" alt="Single target monk tree" class="border-solid border-2 border-bgBlack">
-          </a>
+            <button
+              class="fa fa-clone cursor-pointer text-lg"
+              aria-hidden="true"
+              onclick="copyString('st_string')"
+            ></button>
           </div>
-          
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Windwalker Tree</h3>
-            <a href="./img/ST_WWbig.png" class="cursor-pointer">
-              <img src="./img/ST_WW.png" alt="Single target ww tree" class="border-solid border-2 border-bgBlack">
-            </a>
+
+          <div
+            class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5 imgcont"
+          >
+            <div>
+              <h3
+                class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+              >
+                Monk Tree
+              </h3>
+              <a href="./img/ST_MONKbig.png" class="cursor-pointer">
+                <img
+                  src="./img/ST_MONK.png"
+                  alt="Single target monk tree"
+                  class="border-solid border-2 border-bgBlack"
+                />
+              </a>
+            </div>
+
+            <div>
+              <h3
+                class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+              >
+                Windwalker Tree
+              </h3>
+              <a href="./img/ST_WWbig.png" class="cursor-pointer">
+                <img
+                  src="./img/ST_WW.png"
+                  alt="Single target ww tree"
+                  class="border-solid border-2 border-bgBlack"
+                />
+              </a>
+            </div>
           </div>
-         </div>
-  
         </article>
 
         <article>
           <h2
-          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
-        >
-          Cleave
-        </h2>
-         <p  class="py-4 text-white text-lg sm:text-md">
-          For most raid encounters with adds or most Mythic+ fights where the packs are smaller, this is a decent all-around build.
-         </p>
+            class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+          >
+            Cleave
+          </h2>
+          <p class="py-4 text-white text-lg sm:text-md imgtext">
+            For most raid encounters with adds or most Mythic+ fights where the
+            packs are smaller, this is a decent all-around build.
+          </p>
 
-         <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQSkkEtISEAAAAIRSSIBIJJCJlkERCJkkkk0SAAAA</p>
+          <div
+            class="inline-block w-full pt-4 pb-4 pl-5 pr-5 bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code justify-between items-center"
+          >
+            <p class="code hidden sm:inline" id="cl_string">
+              B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQSkkEtISEAAAAIRSSIBIJJCJlkERCJkkkk0SAAAA
+            </p>
             <p class="code inline sm:hidden text-lg">Copy string</p>
-            <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
-     
-         </div>
-         
-         <div class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5">
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Monk Tree</h3>
-          <a href="./img/CLEAVE_MONKbig.png" class="cursor-pointer">
-            <img src="./img/CLEAVE_MONK.png" alt="Cleave monk tree" class="border-solid border-2 border-bgBlack">
-          </a>
+            <button
+              class="fa fa-clone cursor-pointer text-lg"
+              aria-hidden="true"
+              onclick="copyString('cl_string')"
+            ></button>
           </div>
-          
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Windwalker Tree</h3>
-            <a href="./img/CLEAVE_WWbig.png" class="cursor-pointer">
 
-              <img src="./img/CLEAVE_WW.png" alt="Cleave ww tree" class="border-solid border-2 border-bgBlack">
-            </a>
+          <div
+            class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5 imgcont"
+          >
+            <div>
+              <h3
+                class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+              >
+                Monk Tree
+              </h3>
+              <a href="./img/CLEAVE_MONKbig.png" class="cursor-pointer">
+                <img
+                  src="./img/CLEAVE_MONK.png"
+                  alt="Cleave monk tree"
+                  class="border-solid border-2 border-bgBlack"
+                />
+              </a>
+            </div>
+
+            <div>
+              <h3
+                class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+              >
+                Windwalker Tree
+              </h3>
+              <a href="./img/CLEAVE_WWbig.png" class="cursor-pointer">
+                <img
+                  src="./img/CLEAVE_WW.png"
+                  alt="Cleave ww tree"
+                  class="border-solid border-2 border-bgBlack"
+                />
+              </a>
+            </div>
           </div>
-         </div>
-  
         </article>
 
-          <article>
+        <article>
           <h2
-          class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
-        >
-          AOE
-        </h2>
-         <p  class="py-4 text-white text-lg sm:text-md">
-          The default, maximum AOE build for Mythic+ or raid engagements with a lot of adds.
-         </p>
+            class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+          >
+            AOE
+          </h2>
+          <p class="py-4 text-white text-lg sm:text-md imgtext">
+            The default, maximum AOE build for Mythic+ or raid engagements with
+            a lot of adds.
+          </p>
 
-         <div class="inline-block w-full pt-4 pb-4 pl-5 pr-5  bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code  justify-between items-center">
-          	<p class="code hidden sm:inline" id="st_string">B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQSkkElISEAAAAQkkESEIJJCJlkEhQikkkk0SAAAA</p>
+          <div
+            class="inline-block w-full pt-4 pb-4 pl-5 pr-5 bg-stringBg text-stringColor text-xs sm:text-sm md:text-md flex code justify-between items-center"
+          >
+            <p class="code hidden sm:inline" id="aoe_string">
+              B0QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQSkkElISEAAAAQkkESEIJJCJlkEhQikkkk0SAAAA
+            </p>
             <p class="code inline sm:hidden text-lg">Copy string</p>
-            <button class="fa fa-clone cursor-pointer text-lg" aria-hidden="true" onclick="copyString('st_string')"></button>
-     
-         </div>
-         
-         <div class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5">
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Monk Tree</h3>
-          <a href="./img/AOE_MONKbig.png" class="cursor-pointer">
-            <img src="./img/AOE_MONK.png" alt="Cleave monk tree" class="border-solid border-2 border-bgBlack">
-          </a>
+            <button
+              class="fa fa-clone cursor-pointer text-lg"
+              aria-hidden="true"
+              onclick="copyString('aoe_string')"
+            ></button>
           </div>
-          
-          <div>
-            <h3 class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500">Windwalker Tree</h3>
-            <a href="./img/AOE_WWbig.png" class="cursor-pointer">
-              <img src="./img/AOE_WW.png" alt="Cleave ww tree" class="border-solid border-2 border-bgBlack">
-            </a>
-          </div>
-         </div>
-  
-        </article>
 
+          <div
+            class="flex sm:justify-evenly sm:flex-row flex-col items-center gap-5 mt-5 imgcont"
+          >
+            <div>
+              <h3
+                class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+              >
+                Monk Tree
+              </h3>
+              <a href="./img/AOE_MONKbig.png" class="cursor-pointer">
+                <img
+                  src="./img/AOE_MONK.png"
+                  alt="Cleave monk tree"
+                  class="border-solid border-2 border-bgBlack"
+                />
+              </a>
+            </div>
+
+            <div>
+              <h3
+                class="pt-5 font-bold text-lg sm:text-xl md:text-2xl text-yellow-500"
+              >
+                Windwalker Tree
+              </h3>
+              <a href="./img/AOE_WWbig.png" class="cursor-pointer">
+                <img
+                  src="./img/AOE_WW.png"
+                  alt="Cleave ww tree"
+                  class="border-solid border-2 border-bgBlack"
+                />
+              </a>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
 
-   <footer class="bg-navDark footer items-center flex p-4 justify-center">
+    <footer class="bg-navDark footer items-center flex p-4 justify-center">
       <p class="text-white text-lg">
         Copyright &copy; 2023 - All rights reserved
       </p>

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss ./input.css -o ./css/main.css --watch"
+    "build": "postcss ./input.css -o ./css/main.css --watch",
+    "build-print": "postcss ./print.css -o ./css/print.css --watch"
   },
   "keywords": [],
   "author": "",
