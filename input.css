@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .contribute {
-  background: url("../../img/background.png") !important;
+  background: url("../img/background.png") !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
 }
