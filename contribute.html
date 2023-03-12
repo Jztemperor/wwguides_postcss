@@ -88,7 +88,11 @@
         </p>
 
         <div class="w-10/12 sm:w-8/12">
-          <form method="get" action="#">
+          <form
+            id="contactForm"
+            method="post"
+            onsubmit="event.preventDefault(); handleContactFormSubmit();"
+          >
             <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
               <div>
                 <label

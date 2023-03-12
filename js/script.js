@@ -14,3 +14,10 @@ const copyString = (id) => {
   const text_to_copy = document.getElementById(id).textContent;
   navigator.clipboard.writeText(text_to_copy);
 };
+
+// Handle form submission
+const handleContactFormSubmit = () => {
+  alert("Thanks for contributing!");
+  const form = document.getElementById("contactForm");
+  form.reset();
+};
