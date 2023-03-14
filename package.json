@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "postcss ./input.css -o ./css/main.css --watch",
-    "build-print": "postcss ./print.css -o ./css/print.css --watch"
+    "build-print": "postcss ./print.css -o ./css/print.css --watch",
+    "build-contrast": "postcss ./highcontrast.css -o ./css/highcontrast.css --watch"
   },
   "keywords": [],
   "author": "",

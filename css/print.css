@@ -43,3 +43,13 @@ table > tr > td {
 section {
   margin: 0 !important;
 }
+
+form {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+#toggleContrast {
+  display: none !important;
+  visibility: hidden !important;
+}

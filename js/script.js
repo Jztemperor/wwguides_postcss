@@ -21,3 +21,23 @@ const handleContactFormSubmit = () => {
   const form = document.getElementById("contactForm");
   form.reset();
 };
+
+// Add / Remove high contrast stylesheet
+const docHead = document.head;
+const togglerButton = document.getElementById("toggleContrast");
+let contrastSheet = null;
+
+togglerButton.addEventListener("click", () => {
+  if (contrastSheet !== null) {
+    docHead.removeChild(contrastSheet);
+    contrastSheet = null;
+  } else {
+    contrastSheet = document.createElement("link");
+    contrastSheet.rel = "stylesheet";
+    contrastSheet.type = "text/css";
+    contrastSheet.href = "./css/highcontrast.css";
+    contrastSheet.id = "high_contrast_sheet";
+
+    docHead.appendChild(contrastSheet);
+  }
+});

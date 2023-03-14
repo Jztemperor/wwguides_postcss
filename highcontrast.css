@@ -1,0 +1,36 @@
+nav {
+  background-color: #0a0a0a !important;
+  font-size: 1.3rem !important;
+}
+
+#mobile_menu {
+  background-color: #0a0a0a;
+}
+
+section {
+  background-color: #0a0a0a !important;
+}
+
+section > p {
+  font-size: 1.27rem !important;
+}
+
+article > p {
+  font-size: 1.27rem !important;
+}
+
+p {
+  font-family: 1.27rem !important;
+}
+
+section > h2 {
+  font-size: 1.6rem !important;
+}
+
+footer {
+  background-color: #0a0a0a !important;
+}
+
+footer > p {
+  font-size: 1.27rem !important;
+}
